@@ -1,0 +1,8 @@
+#-*- coding:  Shift-JIS -*-
+
+import difflib
+
+text_a = 'ˆ³—Í'
+text_b = 'ˆ³—Í'
+r=difflib.SequenceMatcher(None,text_a,text_b).ratio()
+print(r)
